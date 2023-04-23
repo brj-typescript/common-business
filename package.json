@@ -1,5 +1,5 @@
 {
-	"name": "@brj/common-business",
+	"name": "@brj-typescript/common-business",
 	"version": "1.0.0",
 	"description": "BRJ common components.",
 	"main": "index.js",
@@ -16,11 +16,11 @@
 		"React"
 	],
 	"dependencies": {
+		"@brj-typescript/ui": "^1.0",
 		"@types/jest": "~27.0.3",
 		"@types/node": "^17.0.14",
 		"@types/react": "^18.0.12",
-		"typescript": "^4.6.3",
-		"@brj/ui": "^1.2"
+		"typescript": "^4.6.3"
 	},
 	"peerDependencies": {
 		"react": "^16.8.0",
@@ -39,16 +39,16 @@
 		"ts-jest": "~27.0.7"
 	},
 	"bugs": {
-		"url": "https://github.com/baraja-core/common-business/issues"
+		"url": "https://github.com/brj-typescript/common-business/issues"
 	},
-	"homepage": "https://github.com/baraja-core/common-business#readme",
+	"homepage": "https://github.com/brj-typescript/common-business#readme",
 	"scripts": {
 		"prepare": "npm run build",
 		"build": "yarn build:esm && yarn build:cjs && yarn build:types",
 		"build:esm": "tsc",
 		"build:cjs": "tsc --module commonjs --outDir lib",
 		"build:types": "tsc --emitDeclarationOnly --declarationDir lib",
-		"test": "yarn jest --coverage"
+		"test": "yarn jest --coverage --passWithNoTests"
 	},
 	"files": [
 		"/src",

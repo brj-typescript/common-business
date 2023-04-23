@@ -1,4 +1,4 @@
-import { BrjLogo } from '@brj/ui';
+import { BrjLogo } from '@brj-typescript/ui';
 import { Box } from '@mui/system';
 
 export const BusinessCard = () => (
