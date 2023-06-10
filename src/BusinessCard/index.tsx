@@ -1,3 +1,5 @@
+'use client';
+
 import { BrjLogo } from '@brj-typescript/ui';
 import { Box } from '@mui/system';
 
